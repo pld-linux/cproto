@@ -1,17 +1,17 @@
-Summary:     C Prototype Utility
-Summary(de): C-Prototyp-Dienstprogramm
-Summary(fr): Utilitaire de prototypage C.
-Summary(pl): Narzêdzia dla prototypów C
-Summary(tr): C prototip aracý
-Name:        cproto
-Version:     4.4
-Release:     9
-Copyright:   Public Domain
-Group:       Development/Tools
-Group(pl):   Programowanie/Narzêdzia
-Source:      ftp://ftp.oce.com/pub/cproto/cproto-4.4.tar.Z
-Patch0:       cproto-gcc.patch
-BuildRoot:	/tmp/%{name}-%{version}-root
+Summary:	C Prototype Utility
+Summary(de):	C-Prototyp-Dienstprogramm
+Summary(fr):	Utilitaire de prototypage C.
+Summary(pl):	Narzêdzia dla prototypów C
+Summary(tr):	C prototip aracý
+Name:		cproto
+Version:	4.4
+Release:	9
+Copyright:	Public Domain
+Group:		Development/Tools
+Group(pl):	Programowanie/Narzêdzia
+Source:		ftp://ftp.oce.com/pub/cproto/cproto-4.4.tar.Z
+Patch0:		cproto-gcc.patch
+Buildroot:	/tmp/%{name}-%{version}-root
 
 %description
 Cproto generates function prototypes for functions defined in the specified
@@ -55,26 +55,27 @@ cproto girdi olarak standart giriþten bilgi okur.
 autoconf
 CFLAGS="$RPM_OPT_FLAGS" LDFLAGS="-s" \
 ./configure %{_target} \
-	--prefix=/usr \
-	--exec-prefix=/usr
+	--prefix=%{_prefix} \
+	--exec-prefix=%{_prefix}
 make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/usr/{bin,man/man1}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 
 make install \
 	bindir=$RPM_BUILD_ROOT%{_bindir} \
 	mandir=$RPM_BUILD_ROOT%{_mandir}/man1
 
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/*
+gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/* \
+	README MANIFEST CHANGES
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README MANIFEST CHANGES
+%doc *.gz
 %attr(755,root,root) %{_bindir}/cproto
 %{_mandir}/man1/*
 
