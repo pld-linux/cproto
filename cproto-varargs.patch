@@ -1,0 +1,10 @@
+--- cproto-4.6/grammar.y.orig	Tue Jan 20 19:55:55 1998
++++ cproto-4.6/grammar.y	Mon Aug 13 18:39:07 2001
+@@ -835,6 +835,7 @@
+ 	"__const__",    "__const",
+ 	"__volatile__", "__volatile",
+ 	"__inline__",   "__inline",
++	"__builtin_va_list",
+ #endif
+     };
+     int i;
