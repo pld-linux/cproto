@@ -107,7 +107,7 @@ cproto также выводит декларации переменных, определенных в этих
 %patch3 -p1
 
 %build
-autoconf
+%{__autoconf}
 CPP="/lib/cpp"
 export CPP
 %configure
