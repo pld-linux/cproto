@@ -12,9 +12,6 @@ Version:	4.6
 Release:	11
 License:	Public Domain
 Group:		Development/Tools
-Group(de):	Entwicklung/Werkzeuge
-Group(fr):	Development/Outils
-Group(pl):	Programowanie/Narzêdzia
 Source0:	http://prdownloads.sourceforge.net/cproto/%{name}-%{version}.tar.gz
 Patch0:		%{name}.patch
 Patch1:		%{name}-DESTDIR.patch
