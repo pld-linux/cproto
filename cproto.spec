@@ -5,13 +5,15 @@ Summary(pl):	Narzêdzia dla prototypów C
 Summary(tr):	C prototip aracý
 Name:		cproto
 Version:	4.6
-Release:	4
+Release:	6
 License:	Public Domain
 Group:		Development/Tools
+Group(de):	Entwicklung/Werkzeuge
 Group(fr):	Development/Outils
 Group(pl):	Programowanie/Narzêdzia
 Source0:	ftp://ftp.oce.com/pub/cproto/%{name}-%{version}.tar.gz
-Patch0:		cproto.patch
+Patch0:		%{name}.patch
+Patch1:		%{name}-DESTDIR.patch
 BuildRequires:	flex
 BuildRequires:	bison
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -57,27 +59,22 @@ verilmemiþse, cproto girdi olarak standart giriþten bilgi okur.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 autoconf
 CPP="/lib/cpp"
-LDFLSGS="-s"
-export CPP export
-%configure \
-	--prefix=%{_prefix} \
-	--exec-prefix=%{_prefix}
+export CPP
+%configure
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 
 %{__make} install \
-	bindir=$RPM_BUILD_ROOT%{_bindir} \
-	mandir=$RPM_BUILD_ROOT%{_mandir}/man1
+	DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/* \
-	README CHANGES
+gzip -9nf README CHANGES
 
 %clean
 rm -rf $RPM_BUILD_ROOT
