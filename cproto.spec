@@ -48,6 +48,7 @@ cproto girdi olarak standart giriþten bilgi okur.
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
 autoconf
