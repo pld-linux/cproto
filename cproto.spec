@@ -1,11 +1,11 @@
 Summary:	C Prototype Utility
 Summary(de):	C-Prototyp-Dienstprogramm
 Summary(fr):	Utilitaire de prototypage C
-Summary(pl):	Narzêdzia dla prototypów C
+Summary(pl):	Narzêdzia do prototypów C
 Summary(tr):	C prototip aracý
 Name:		cproto
 Version:	4.6
-Release:	6
+Release:	7
 License:	Public Domain
 Group:		Development/Tools
 Group(de):	Entwicklung/Werkzeuge
@@ -14,6 +14,7 @@ Group(pl):	Programowanie/Narzêdzia
 Source0:	ftp://ftp.oce.com/pub/cproto/%{name}-%{version}.tar.gz
 Patch0:		%{name}.patch
 Patch1:		%{name}-DESTDIR.patch
+Patch2:		%{name}-acfix.patch
 BuildRequires:	autoconf
 BuildRequires:	flex
 BuildRequires:	bison
@@ -61,6 +62,7 @@ verilmemiþse, cproto girdi olarak standart giriþten bilgi okur.
 %setup -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 
 %build
 autoconf
