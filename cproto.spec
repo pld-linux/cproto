@@ -4,13 +4,13 @@ Summary(fr):	Utilitaire de prototypage C.
 Summary(pl):	Narzêdzia dla prototypów C
 Summary(tr):	C prototip aracý
 Name:		cproto
-Version:	4.4
-Release:	9
+Version:	4.6
+Release:	3
 Copyright:	Public Domain
 Group:		Development/Tools
 Group(pl):	Programowanie/Narzêdzia
-Source:		ftp://ftp.oce.com/pub/cproto/cproto-4.4.tar.Z
-Patch0:		cproto-gcc.patch
+Source:		ftp://ftp.oce.com/pub/cproto/%{name}-%{version}.tar.gz
+Patch0:		cproto.patch
 Buildroot:	/tmp/%{name}-%{version}-root
 
 %description
@@ -49,12 +49,11 @@ cproto girdi olarak standart giriþten bilgi okur.
 
 %prep
 %setup -q
-%patch0 -p0
+%patch0 -p1
 
 %build
 autoconf
-CFLAGS="$RPM_OPT_FLAGS" LDFLAGS="-s" \
-./configure %{_target_platform} \
+%configure \
 	--prefix=%{_prefix} \
 	--exec-prefix=%{_prefix}
 make
@@ -68,7 +67,7 @@ make install \
 	mandir=$RPM_BUILD_ROOT%{_mandir}/man1
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/* \
-	README MANIFEST CHANGES
+	README CHANGES
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -80,6 +79,11 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/*
 
 %changelog
+* Fri Jun  4 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
+  [4.6-3]
+- new patch for cproto (from RH 6),
+- added using %%configure macro in %build.
+
 * Mon Jun 15 1998 Wojtek ¦lusarczyk <wojtek@shadow.eu.org>
   [4.4-9]
 - major changes,
