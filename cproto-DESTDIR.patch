@@ -7,7 +7,7 @@ diff -Nru cproto-4.6/Makefile.in cproto-4.6.new/Makefile.in
  
 -bindir		= $(exec_prefix)/bin
 -mandir		= $(prefix)/man/man1
-+bindir		= @bindir#
++bindir		= @bindir@
 +mandir		= @mandir@/man1
  manext		= 1
  
