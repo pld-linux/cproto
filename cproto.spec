@@ -12,15 +12,15 @@ Version:	4.6
 Release:	14
 License:	Public Domain
 Group:		Development/Tools
-Source0:	http://prdownloads.sourceforge.net/cproto/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/cproto/%{name}-%{version}.tar.gz
 Patch0:		%{name}.patch
 Patch1:		%{name}-DESTDIR.patch
 Patch2:		%{name}-acfix.patch
 Patch3:		%{name}-varargs.patch
 URL:		http://cproto.sourceforge.net/
 BuildRequires:	autoconf
-BuildRequires:	flex
 BuildRequires:	bison
+BuildRequires:	flex
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
