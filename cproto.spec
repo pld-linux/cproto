@@ -9,7 +9,7 @@ Summary(tr):	C prototip aracЩ
 Summary(uk):	Генеру╓ прототипи функц╕й та декларац╕╖ зм╕нних з коду на C
 Name:		cproto
 Version:	4.6
-Release:	14
+Release:	15
 License:	Public Domain
 Group:		Development/Tools
 Source0:	http://dl.sourceforge.net/cproto/%{name}-%{version}.tar.gz
