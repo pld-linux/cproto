@@ -11,7 +11,7 @@ Group:		Development/Tools
 Group(pl):	Programowanie/Narzêdzia
 Source:		ftp://ftp.oce.com/pub/cproto/%{name}-%{version}.tar.gz
 Patch0:		cproto.patch
-Buildroot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Cproto generates function prototypes for functions defined in the specified
