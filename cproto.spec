@@ -1,12 +1,12 @@
 Summary:	C Prototype Utility
 Summary(de):	C-Prototyp-Dienstprogramm
-Summary(fr):	Utilitaire de prototypage C.
+Summary(fr):	Utilitaire de prototypage C
 Summary(pl):	Narzêdzia dla prototypów C
 Summary(tr):	C prototip aracý
 Name:		cproto
 Version:	4.6
-Release:	3
-Copyright:	Public Domain
+Release:	4
+License:	Public Domain
 Group:		Development/Tools
 Group(pl):	Programowanie/Narzêdzia
 Source:		ftp://ftp.oce.com/pub/cproto/%{name}-%{version}.tar.gz
@@ -53,6 +53,9 @@ cproto girdi olarak standart giriþten bilgi okur.
 
 %build
 autoconf
+CPP="/lib/cpp"
+LDFLSGS="-s"
+export CPP export
 %configure \
 	--prefix=%{_prefix} \
 	--exec-prefix=%{_prefix}
