@@ -8,8 +8,9 @@ Version:     4.4
 Release:     9
 Copyright:   Public Domain
 Group:       Development/Tools
+Group(pl):   Programowanie/Narzêdzia
 Source:      ftp://ftp.oce.com/pub/cproto/cproto-4.4.tar.Z
-Patch0:      cproto-gcc.patch
+Patch0:       cproto-gcc.patch
 Buildroot:   /tmp/%{name}-%{version}-root
 
 %description
