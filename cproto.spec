@@ -14,6 +14,7 @@ Group(pl):	Programowanie/Narzêdzia
 Source0:	ftp://ftp.oce.com/pub/cproto/%{name}-%{version}.tar.gz
 Patch0:		%{name}.patch
 Patch1:		%{name}-DESTDIR.patch
+BuildRequires:	autoconf
 BuildRequires:	flex
 BuildRequires:	bison
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
