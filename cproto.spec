@@ -73,9 +73,9 @@ gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/*
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(644, root, root, 755)
+%defattr(644,root,root,755)
 %doc README MANIFEST CHANGES
-%attr(755, root, root) %{_bindir}/cproto
+%attr(755,root,root) %{_bindir}/cproto
 %{_mandir}/man1/*
 
 %changelog
