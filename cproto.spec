@@ -64,7 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/usr/{bin,man/man1}
 
 make install \
-	bindir=$RPM_BUILD_ROOT/usr/bin \
+	bindir=$RPM_BUILD_ROOT%{_bindir} \
 	mandir=$RPM_BUILD_ROOT%{_mandir}/man1
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/*
@@ -75,7 +75,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644, root, root, 755)
 %doc README MANIFEST CHANGES
-%attr(755, root, root) /usr/bin/cproto
+%attr(755, root, root) %{_bindir}/cproto
 %{_mandir}/man1/*
 
 %changelog
