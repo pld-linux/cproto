@@ -77,20 +77,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc *.gz
 %attr(755,root,root) %{_bindir}/cproto
 %{_mandir}/man1/*
-
-%changelog
-* Fri Jun  4 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
-  [4.6-3]
-- new patch for cproto (from RH 6),
-- added using %%configure macro in %build.
-
-* Mon Jun 15 1998 Wojtek ¦lusarczyk <wojtek@shadow.eu.org>
-  [4.4-9]
-- major changes,
-- rewrote wrong spec file.
-
-* Mon Apr 27 1998 Prospector System <bugs@redhat.com>
-- translations modified for de, fr, tr
-
-* Thu Jul 10 1997 Erik Troan <ewt@redhat.com>
-- built against glibc
