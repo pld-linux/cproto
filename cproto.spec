@@ -9,7 +9,7 @@ Summary(tr):	C prototip aracЩ
 Summary(uk):	Генеру╓ прототипи функц╕й та декларац╕╖ зм╕нних з коду на C
 Name:		cproto
 Version:	4.6
-Release:	11
+Release:	14
 License:	Public Domain
 Group:		Development/Tools
 Source0:	http://prdownloads.sourceforge.net/cproto/%{name}-%{version}.tar.gz
@@ -119,13 +119,11 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README CHANGES
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README CHANGES
 %attr(755,root,root) %{_bindir}/cproto
 %{_mandir}/man1/*
