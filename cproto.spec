@@ -64,7 +64,7 @@ export CPP export
 %configure \
 	--prefix=%{_prefix} \
 	--exec-prefix=%{_prefix}
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
