@@ -12,6 +12,8 @@ Group(fr):	Development/Outils
 Group(pl):	Programowanie/Narzêdzia
 Source0:	ftp://ftp.oce.com/pub/cproto/%{name}-%{version}.tar.gz
 Patch0:		cproto.patch
+BuildRequires:	flex
+BuildRequires:	bison
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -40,9 +42,9 @@ l'entrée standard.
 
 %description -l pl
 Cproto jest programem do generowania prototypów funkcji,
-zdefiniowanych w plikach ¼ród³owtch C. Definicje funkcji mog± byæ
+zdefiniowanych w plikach ¼ród³owych C. Definicje funkcji mog± byæ
 zarówno zgodne z ANSI C jak i ze starszymi. Cproto mo¿e tak¿e
-dodatkowo tworzyæ wynik deklaracji dla ro¿nych zmiennych
+dodatkowo tworzyæ wynik deklaracji dla ró¿nych zmiennych
 zdefiniowanych w pliku. Je¿eli argumentem nie jest plik, cproto
 pobiera argumenty ze standardowego wej¶cia (stdin).
 
