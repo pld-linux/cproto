@@ -54,7 +54,7 @@ cproto girdi olarak standart giriþten bilgi okur.
 %build
 autoconf
 CFLAGS="$RPM_OPT_FLAGS" LDFLAGS="-s" \
-./configure \
+./configure %{_target} \
 	--prefix=/usr \
 	--exec-prefix=/usr
 make
