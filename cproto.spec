@@ -70,7 +70,7 @@ make
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 
-make install \
+%{__make} install \
 	bindir=$RPM_BUILD_ROOT%{_bindir} \
 	mandir=$RPM_BUILD_ROOT%{_mandir}/man1
 
