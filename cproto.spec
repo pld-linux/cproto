@@ -13,6 +13,7 @@ Release:	14
 License:	Public Domain
 Group:		Development/Tools
 Source0:	http://dl.sourceforge.net/cproto/%{name}-%{version}.tar.gz
+# Source0-md5:	5968d18e9508b2892471e6ef16e140e3
 Patch0:		%{name}.patch
 Patch1:		%{name}-DESTDIR.patch
 Patch2:		%{name}-acfix.patch
