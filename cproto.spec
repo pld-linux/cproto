@@ -1,12 +1,12 @@
 Summary:	C Prototype Utility
-Summary(de.UTF-8):   C-Prototyp-Dienstprogramm
-Summary(es.UTF-8):   Utilitario de prototipos C
-Summary(fr.UTF-8):   Utilitaire de prototypage C
-Summary(pl.UTF-8):   Narzędzia do prototypów C
-Summary(pt_BR.UTF-8):   Utilitário de prototipação C
-Summary(ru.UTF-8):   Генерирует прототипы функций и декларации переменных из кода на C
-Summary(tr.UTF-8):   C prototip aracı
-Summary(uk.UTF-8):   Генерує прототипи функцій та декларації змінних з коду на C
+Summary(de.UTF-8):	C-Prototyp-Dienstprogramm
+Summary(es.UTF-8):	Utilitario de prototipos C
+Summary(fr.UTF-8):	Utilitaire de prototypage C
+Summary(pl.UTF-8):	Narzędzia do prototypów C
+Summary(pt_BR.UTF-8):	Utilitário de prototipação C
+Summary(ru.UTF-8):	Генерирует прототипы функций и декларации переменных из кода на C
+Summary(tr.UTF-8):	C prototip aracı
+Summary(uk.UTF-8):	Генерує прототипи функцій та декларації змінних з коду на C
 Name:		cproto
 Version:	4.6
 Release:	16
