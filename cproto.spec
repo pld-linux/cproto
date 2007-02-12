@@ -1,12 +1,12 @@
 Summary:	C Prototype Utility
-Summary(de):	C-Prototyp-Dienstprogramm
-Summary(es):	Utilitario de prototipos C
-Summary(fr):	Utilitaire de prototypage C
-Summary(pl):	NarzЙdzia do prototypСw C
-Summary(pt_BR):	UtilitАrio de prototipaГЦo C
-Summary(ru):	Генерирует прототипы функций и декларации переменных из кода на C
-Summary(tr):	C prototip aracЩ
-Summary(uk):	Генеру╓ прототипи функц╕й та декларац╕╖ зм╕нних з коду на C
+Summary(de.UTF-8):   C-Prototyp-Dienstprogramm
+Summary(es.UTF-8):   Utilitario de prototipos C
+Summary(fr.UTF-8):   Utilitaire de prototypage C
+Summary(pl.UTF-8):   Narzд≥dzia do prototypцЁw C
+Summary(pt_BR.UTF-8):   Utilitц║rio de prototipaц╖цёo C
+Summary(ru.UTF-8):   п⌠п╣п╫п╣я─п╦я─я┐п╣я┌ п©я─п╬я┌п╬я┌п╦п©я▀ я└я┐п╫п╨я├п╦п╧ п╦ п╢п╣п╨п╩п╟я─п╟я├п╦п╦ п©п╣я─п╣п╪п╣п╫п╫я▀я┘ п╦п╥ п╨п╬п╢п╟ п╫п╟ C
+Summary(tr.UTF-8):   C prototip aracд╠
+Summary(uk.UTF-8):   п⌠п╣п╫п╣я─я┐я■ п©я─п╬я┌п╬я┌п╦п©п╦ я└я┐п╫п╨я├я√п╧ я┌п╟ п╢п╣п╨п╩п╟я─п╟я├я√я≈ п╥п╪я√п╫п╫п╦я┘ п╥ п╨п╬п╢я┐ п╫п╟ C
 Name:		cproto
 Version:	4.6
 Release:	16
@@ -32,73 +32,73 @@ cproto also outputs declarations for variables defined in the files.
 If no file argument is given, cproto reads its input from the standard
 input.
 
-%description -l de
-Cproto erzeugt Funktionsprototypen fЭr in C-Quelldateien definierte
-Funktionen fЭr die Standardausgabe. Die Funktionsdefinitionen kЖnnen
+%description -l de.UTF-8
+Cproto erzeugt Funktionsprototypen fц╪r in C-Quelldateien definierte
+Funktionen fц╪r die Standardausgabe. Die Funktionsdefinitionen kц╤nnen
 im alten oder ANSI-C-Format vorliegen. cproto kann auch Deklarationen
-fЭr in den Dateien definierten Variablen ausgeben. Wird kein
+fц╪r in den Dateien definierten Variablen ausgeben. Wird kein
 Dateiargument angegeben, liest cproto die Eingabe aus der
 Standardeingabe.
 
-%description -l es
-cproto crea prototipos de funciСn para funciones definidas en los
-archivos fuente C para salida padrСn. Las definiciones de las
+%description -l es.UTF-8
+cproto crea prototipos de funciцЁn para funciones definidas en los
+archivos fuente C para salida padrцЁn. Las definiciones de las
 funciones pueden ser en el antiguo estilo o en el estilo ANSI C.
-Opcionalmente, cproto tambiИn produce declaraciones para variables
+Opcionalmente, cproto tambiц╘n produce declaraciones para variables
 definidas en los archivos. Si no se ofrece argumento de archivo,
-cproto lee de la entrada padrСn.
+cproto lee de la entrada padrцЁn.
 
-%description -l fr
-Cproto gИnИre des prototypes de fonction dИfinies dans sources C
-spИcifiИes sur la sortie standard. Les fonctions dИfines peuvent Йtre
+%description -l fr.UTF-8
+Cproto gц╘nц╘re des prototypes de fonction dц╘finies dans sources C
+spц╘cifiц╘es sur la sortie standard. Les fonctions dц╘fines peuvent ц╙tre
 en vieux style ou en style C ANSI. Optionnelement, cproto affiche
-aussi les dИclarations pour les variables dИfinies dans ces sources.
-Si aucun argument ne lui est donnИ, cproto lit ses entrИes depuis
-l'entrИe standard.
+aussi les dц╘clarations pour les variables dц╘finies dans ces sources.
+Si aucun argument ne lui est donnц╘, cproto lit ses entrц╘es depuis
+l'entrц╘e standard.
 
-%description -l pl
-Cproto jest programem do generowania prototypСw funkcji,
-zdefiniowanych w plikach ╪rСdЁowych C. Definicje funkcji mog╠ byФ
-zarСwno zgodne z ANSI C jak i ze starszymi. Cproto mo©e tak©e
-dodatkowo tworzyФ wynik deklaracji dla rС©nych zmiennych
-zdefiniowanych w pliku. Je©eli argumentem nie jest plik, cproto
-pobiera argumenty ze standardowego wej╤cia (stdin).
+%description -l pl.UTF-8
+Cproto jest programem do generowania prototypцЁw funkcji,
+zdefiniowanych w plikach е╨rцЁdе┌owych C. Definicje funkcji mogд┘ byд┤
+zarцЁwno zgodne z ANSI C jak i ze starszymi. Cproto moе╪e takе╪e
+dodatkowo tworzyд┤ wynik deklaracji dla rцЁе╪nych zmiennych
+zdefiniowanych w pliku. Jeе╪eli argumentem nie jest plik, cproto
+pobiera argumenty ze standardowego wejе⌡cia (stdin).
 
-%description -l pt_BR
-O cproto gera protСtipos de funГЦo para funГУes definidas nos arquivos
-fonte C para saМda padrЦo. As definiГУes das funГУes podem ser no
-velho estilo ou no estilo ANSI C. Opcionalmente, cproto tambИm produz
-declaraГУes para variАveis definidas nos arquivos. Se nЦo И fornecido
-argumento de arquivo, cproto lЙ da entrada padrЦo.
+%description -l pt_BR.UTF-8
+O cproto gera protцЁtipos de funц╖цёo para funц╖ц╣es definidas nos arquivos
+fonte C para saц╜da padrцёo. As definiц╖ц╣es das funц╖ц╣es podem ser no
+velho estilo ou no estilo ANSI C. Opcionalmente, cproto tambц╘m produz
+declaraц╖ц╣es para variц║veis definidas nos arquivos. Se nцёo ц╘ fornecido
+argumento de arquivo, cproto lц╙ da entrada padrцёo.
 
-%description -l ru
-Cproto генерирует прототипы для функций, определенных в указанном
-исходном файле на C и выводит их на стандартный вывод. Функции могут
-быть определены как в "старом", так и в стиле ANSI C. Опционально
-cproto также выводит декларации переменных, определенных в этих
-файлах. Если файл(ы) не заданы, cproto берет данные со стандартного
-ввода.
+%description -l ru.UTF-8
+Cproto пЁп╣п╫п╣я─п╦я─я┐п╣я┌ п©я─п╬я┌п╬я┌п╦п©я▀ п╢п╩я▐ я└я┐п╫п╨я├п╦п╧, п╬п©я─п╣п╢п╣п╩п╣п╫п╫я▀я┘ п╡ я┐п╨п╟п╥п╟п╫п╫п╬п╪
+п╦я│я┘п╬п╢п╫п╬п╪ я└п╟п╧п╩п╣ п╫п╟ C п╦ п╡я▀п╡п╬п╢п╦я┌ п╦я┘ п╫п╟ я│я┌п╟п╫п╢п╟я─я┌п╫я▀п╧ п╡я▀п╡п╬п╢. п╓я┐п╫п╨я├п╦п╦ п╪п╬пЁя┐я┌
+п╠я▀я┌я▄ п╬п©я─п╣п╢п╣п╩п╣п╫я▀ п╨п╟п╨ п╡ "я│я┌п╟я─п╬п╪", я┌п╟п╨ п╦ п╡ я│я┌п╦п╩п╣ ANSI C. п·п©я├п╦п╬п╫п╟п╩я▄п╫п╬
+cproto я┌п╟п╨п╤п╣ п╡я▀п╡п╬п╢п╦я┌ п╢п╣п╨п╩п╟я─п╟я├п╦п╦ п©п╣я─п╣п╪п╣п╫п╫я▀я┘, п╬п©я─п╣п╢п╣п╩п╣п╫п╫я▀я┘ п╡ я█я┌п╦я┘
+я└п╟п╧п╩п╟я┘. п∙я│п╩п╦ я└п╟п╧п╩(я▀) п╫п╣ п╥п╟п╢п╟п╫я▀, cproto п╠п╣я─п╣я┌ п╢п╟п╫п╫я▀п╣ я│п╬ я│я┌п╟п╫п╢п╟я─я┌п╫п╬пЁп╬
+п╡п╡п╬п╢п╟.
 
-%description -l uk
-Cproto генеру╓ прототипи для функц╕й, визначених у заданому вих╕дному
-файл╕ на C та виводить ╖х на стандартний вив╕д. Функц╕╖ можуть
-визначатись як у "старому" стил╕, так ╕ в стил╕ ANSI C. Опц╕онально
-cproto також виводить декларац╕╖ зм╕нних, визначених в цих файлах.
-Якщо файл(и) не задан╕, cproto бере дан╕ з╕ стандартного вводу.
+%description -l uk.UTF-8
+Cproto пЁп╣п╫п╣я─я┐я■ п©я─п╬я┌п╬я┌п╦п©п╦ п╢п╩я▐ я└я┐п╫п╨я├я√п╧, п╡п╦п╥п╫п╟я┤п╣п╫п╦я┘ я┐ п╥п╟п╢п╟п╫п╬п╪я┐ п╡п╦я┘я√п╢п╫п╬п╪я┐
+я└п╟п╧п╩я√ п╫п╟ C я┌п╟ п╡п╦п╡п╬п╢п╦я┌я▄ я≈я┘ п╫п╟ я│я┌п╟п╫п╢п╟я─я┌п╫п╦п╧ п╡п╦п╡я√п╢. п╓я┐п╫п╨я├я√я≈ п╪п╬п╤я┐я┌я▄
+п╡п╦п╥п╫п╟я┤п╟я┌п╦я│я▄ я▐п╨ я┐ "я│я┌п╟я─п╬п╪я┐" я│я┌п╦п╩я√, я┌п╟п╨ я√ п╡ я│я┌п╦п╩я√ ANSI C. п·п©я├я√п╬п╫п╟п╩я▄п╫п╬
+cproto я┌п╟п╨п╬п╤ п╡п╦п╡п╬п╢п╦я┌я▄ п╢п╣п╨п╩п╟я─п╟я├я√я≈ п╥п╪я√п╫п╫п╦я┘, п╡п╦п╥п╫п╟я┤п╣п╫п╦я┘ п╡ я├п╦я┘ я└п╟п╧п╩п╟я┘.
+п╞п╨я┴п╬ я└п╟п╧п╩(п╦) п╫п╣ п╥п╟п╢п╟п╫я√, cproto п╠п╣я─п╣ п╢п╟п╫я√ п╥я√ я│я┌п╟п╫п╢п╟я─я┌п╫п╬пЁп╬ п╡п╡п╬п╢я┐.
 
-%description -l tr
-Cproto, verilen C kaynak dosyalarЩnda tanЩmlanmЩЧ fonksiyonlar iГin
-standart ГЩktЩda prototipler oluЧturur. щstenirse dosyalardaki
-deПiЧken tanЩmlamalarЩnЩ da ГЩkartabilir. Programa hiГbir argЭman
-verilmemiЧse, cproto girdi olarak standart giriЧten bilgi okur.
+%description -l tr.UTF-8
+Cproto, verilen C kaynak dosyalarд╠nda tanд╠mlanmд╠е÷ fonksiyonlar iц╖in
+standart ц╖д╠ktд╠da prototipler oluе÷turur. д╟stenirse dosyalardaki
+deд÷iе÷ken tanд╠mlamalarд╠nд╠ da ц╖д╠kartabilir. Programa hiц╖bir argц╪man
+verilmemiе÷se, cproto girdi olarak standart giriе÷ten bilgi okur.
 
-%description -l ru
-Cproto генерирует прототипы для функций, определенных в указанном
-исходном файле на C и выводит их на стандартный вывод. Функции могут
-быть определены как в "старом", так и в стиле ANSI C. Опционально
-cproto также выводит декларации переменных, определенных в этих
-файлах. Если файл(ы) не заданы, cproto берет данные со стандартного
-ввода.
+%description -l ru.UTF-8
+Cproto пЁп╣п╫п╣я─п╦я─я┐п╣я┌ п©я─п╬я┌п╬я┌п╦п©я▀ п╢п╩я▐ я└я┐п╫п╨я├п╦п╧, п╬п©я─п╣п╢п╣п╩п╣п╫п╫я▀я┘ п╡ я┐п╨п╟п╥п╟п╫п╫п╬п╪
+п╦я│я┘п╬п╢п╫п╬п╪ я└п╟п╧п╩п╣ п╫п╟ C п╦ п╡я▀п╡п╬п╢п╦я┌ п╦я┘ п╫п╟ я│я┌п╟п╫п╢п╟я─я┌п╫я▀п╧ п╡я▀п╡п╬п╢. п╓я┐п╫п╨я├п╦п╦ п╪п╬пЁя┐я┌
+п╠я▀я┌я▄ п╬п©я─п╣п╢п╣п╩п╣п╫я▀ п╨п╟п╨ п╡ "я│я┌п╟я─п╬п╪", я┌п╟п╨ п╦ п╡ я│я┌п╦п╩п╣ ANSI C. п·п©я├п╦п╬п╫п╟п╩я▄п╫п╬
+cproto я┌п╟п╨п╤п╣ п╡я▀п╡п╬п╢п╦я┌ п╢п╣п╨п╩п╟я─п╟я├п╦п╦ п©п╣я─п╣п╪п╣п╫п╫я▀я┘, п╬п©я─п╣п╢п╣п╩п╣п╫п╫я▀я┘ п╡ я█я┌п╦я┘
+я└п╟п╧п╩п╟я┘. п∙я│п╩п╦ я└п╟п╧п╩(я▀) п╫п╣ п╥п╟п╢п╟п╫я▀, cproto п╠п╣я─п╣я┌ п╢п╟п╫п╫я▀п╣ я│п╬ я│я┌п╟п╫п╢п╟я─я┌п╫п╬пЁп╬
+п╡п╡п╬п╢п╟.
 
 %prep
 %setup -q
