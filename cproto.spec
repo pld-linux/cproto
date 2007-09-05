@@ -9,7 +9,7 @@ Summary(tr.UTF-8):	C prototip aracı
 Summary(uk.UTF-8):	Генерує прототипи функцій та декларації змінних з коду на C
 Name:		cproto
 Version:	4.6
-Release:	16
+Release:	17
 License:	Public Domain
 Group:		Development/Tools
 Source0:	http://dl.sourceforge.net/cproto/%{name}-%{version}.tar.gz
