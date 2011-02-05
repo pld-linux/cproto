@@ -92,14 +92,6 @@ standart çıktıda prototipler oluşturur. İstenirse dosyalardaki
 değişken tanımlamalarını da çıkartabilir. Programa hiçbir argüman
 verilmemişse, cproto girdi olarak standart girişten bilgi okur.
 
-%description -l ru.UTF-8
-Cproto генерирует прототипы для функций, определенных в указанном
-исходном файле на C и выводит их на стандартный вывод. Функции могут
-быть определены как в "старом", так и в стиле ANSI C. Опционально
-cproto также выводит декларации переменных, определенных в этих
-файлах. Если файл(ы) не заданы, cproto берет данные со стандартного
-ввода.
-
 %prep
 %setup -q
 %patch0 -p1
