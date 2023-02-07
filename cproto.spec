@@ -8,20 +8,16 @@ Summary(ru.UTF-8):	Генерирует прототипы функций и д�
 Summary(tr.UTF-8):	C prototip aracı
 Summary(uk.UTF-8):	Генерує прототипи функцій та декларації змінних з коду на C
 Name:		cproto
-Version:	4.6
-Release:	18
+Version:	4.7u
+Release:	1
 License:	Public Domain
 Group:		Development/Tools
-Source0:	http://dl.sourceforge.net/cproto/%{name}-%{version}.tar.gz
-# Source0-md5:	5968d18e9508b2892471e6ef16e140e3
-Patch0:		%{name}.patch
-Patch1:		%{name}-DESTDIR.patch
-Patch2:		%{name}-acfix.patch
-Patch3:		%{name}-varargs.patch
-URL:		http://cproto.sourceforge.net/
-BuildRequires:	autoconf
+Source0:	https://invisible-island.net/archives/cproto/%{name}-%{version}.tgz
+# Source0-md5:	eebf3353591be158b518bb40a58f1536
+URL:		https://invisible-island.net/cproto/
 BuildRequires:	bison
 BuildRequires:	flex
+BuildRequires:	groff
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -94,15 +90,10 @@ verilmemişse, cproto girdi olarak standart girişten bilgi okur.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
 
 %build
-%{__autoconf}
-%configure \
-	CPPFLAGS="-DYYSTYPE=YYSTYPE"
+%configure
+
 %{__make}
 
 %install
@@ -116,6 +107,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README CHANGES
+%doc AUTHORS CHANGES LICENSE README
 %attr(755,root,root) %{_bindir}/cproto
-%{_mandir}/man1/*
+%{_mandir}/man1/cproto.1*
