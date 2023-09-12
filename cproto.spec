@@ -8,12 +8,12 @@ Summary(ru.UTF-8):	Генерирует прототипы функций и д�
 Summary(tr.UTF-8):	C prototip aracı
 Summary(uk.UTF-8):	Генерує прототипи функцій та декларації змінних з коду на C
 Name:		cproto
-Version:	4.7u
+Version:	4.7v
 Release:	1
 License:	Public Domain
 Group:		Development/Tools
 Source0:	https://invisible-island.net/archives/cproto/%{name}-%{version}.tgz
-# Source0-md5:	eebf3353591be158b518bb40a58f1536
+# Source0-md5:	2f48717d83c948b94105f759278c17c2
 URL:		https://invisible-island.net/cproto/
 BuildRequires:	bison
 BuildRequires:	flex
