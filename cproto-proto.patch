@@ -1,0 +1,10 @@
+--- cproto-4.7x/grammar.y.orig	2024-12-31 22:04:24.000000000 +0100
++++ cproto-4.7x/grammar.y	2025-03-24 18:22:26.508365821 +0100
+@@ -79,6 +79,7 @@
+ #define YYMAXDEPTH 150
+ 
+ extern int yylex(void);
++extern int yyparse(void);
+ 
+ /* declaration specifier attributes for the typedef statement currently being
+  * scanned
